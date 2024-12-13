@@ -3,6 +3,9 @@ import React from "react";
 
 const WhyChooseUsSchool123 = () => {
   return (
+
+
+    
     <>
       <div className="bg-[#FFFFF] hidden md:block ">
         <h1 className="text-center text-[#323232] text-[2.25rem] mt-10">
