@@ -102,7 +102,7 @@ export default async function ListingPage({ params }) {
       <div className="overflow-hidden md:overflow-visible">
         <CategoryHeroGoEdu />
         <CategoryPage categorydata={categorydata} />
-        <FAQ categorydata={categorydata} />
+        <FAQ categoryData={categorydata} />
       </div>
     </>
   );
