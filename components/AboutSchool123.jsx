@@ -86,25 +86,15 @@ const AboutSchool123 = () => {
           }`}
         >
           <button
-            className="absolute w-[30px] h-[30px] rounded-full text-white text-[1.3rem] bg-[#1B6EA1] top-48 left-3"
+            className="absolute w-[30px] h-[30px] rounded-full text-white text-[1.3rem] bg-background-dark top-48 left-3"
             onClick={() => setShowContent(false)}
           >
             &lt;
           </button>
 
           <div className="p-[46px] text-justify overflow-y-auto h-full text-[13px]">
-            Go Edu is India&apos;s trusted platform for discovering the best boarding
-            schools, dedicated to offering unbiased, detailed information to
-            help families make well-informed choices. We simplify school
-            selection, bringing clarity and confidence to parents and students
-            alike.
-            <br />
-            <br />
-            Driven by a commitment to educational transparency, Go Edu combines
-            insightful listings, genuine reviews, and comprehensive school
-            profiles. Our mission is to empower families with accurate,
-            accessible resources and guide them toward the ideal academic
-            environment tailored to their needs.
+          Edu Karo is your trusted partner in finding the best boarding schools across India. Our user-friendly platform streamlines your search by offering detailed insights and accurate information about top institutions. Whether you prioritize academic achievements, modern facilities, or a supportive environment, Edu Karo helps you make well-informed decisions for your child&apos;s education. Let us guide you through the journey of selecting the perfect boarding school for a brighter future.
+
           </div>
         </div>
       </div>
@@ -228,7 +218,7 @@ const AboutSchool123 = () => {
               onMouseLeave={() => setShowContent(false)}
             >
               <button
-                className="absolute w-[40px] h-[40px] rounded-full text-white text-[1.5rem] bg-[#1B6EA1] top-36 left-10  hover:text-gray-800"
+                className="absolute w-[40px] h-[40px] rounded-full text-white text-[1.5rem] bg-background-dark top-36 left-10  hover:text-white"
                 onClick={() => setShowContent(false)}
               >
                 &lt;
@@ -236,17 +226,8 @@ const AboutSchool123 = () => {
               <div
                 className={`h-full px-[100px] overflow-y-auto  text-[1rem]  `}
               >
-                Go Edu is India&apos;s trusted platform for discovering the best
-                boarding schools, dedicated to offering unbiased, detailed
-                information to help families make well-informed choices. We
-                simplify school selection, bringing clarity and confidence to
-                parents and students alike. <br />
-                <br />
-                Driven by a commitment to educational transparency, Go Edu
-                combines insightful listings, genuine reviews, and comprehensive
-                school profiles. Our mission is to empower families with
-                accurate, accessible resources and guide them toward the ideal
-                academic environment tailored to their needs.
+                Edu Karo is your trusted partner in finding the best boarding schools across India. Our user-friendly platform streamlines your search by offering detailed insights and accurate information about top institutions. Whether you prioritize academic achievements, modern facilities, or a supportive environment, Edu Karo helps you make well-informed decisions for your child&apos;s education. Let us guide you through the journey of selecting the perfect boarding school for a brighter future.
+
                 <div className="flex justify-center items-center text-[#323232] space-x-60 pt-10">
                   <div className="space-y-1">
                     <Image

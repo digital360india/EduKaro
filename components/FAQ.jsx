@@ -70,7 +70,7 @@ function FAQ({ categoryData }) {
           </p>
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="text-[#1B6EA1] m-3 underline hover:text-blue-700 focus:outline-none"
+            className="text-background-dark m-3 underline hover:text-background-light focus:outline-none"
           >
             {isExpanded ? "Read Less" : "Read More"}
           </button>
