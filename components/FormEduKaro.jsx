@@ -3,7 +3,7 @@ import axios from "axios";
 import Image from "next/image";
 import { useState } from "react";
 
-const FormSchool123 = () => {
+const FormEduKaro = () => {
   const [loading, setLoading] = useState(false);
 
   const [formData, setFormData] = useState({
@@ -199,4 +199,4 @@ const FormSchool123 = () => {
     </>
   );
 };
-export default FormSchool123;
+export default FormEduKaro;

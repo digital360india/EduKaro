@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-const CategoryGalleryGoEdu = ({ data, index, citySlug }) => {
+const CategoryGalleryEdukaro = ({ data, index, citySlug }) => {
   const [expandedCard, setExpandedCard] = useState('c1');
 
   const handleCardClick = (id) => {
@@ -36,7 +36,7 @@ const CategoryGalleryGoEdu = ({ data, index, citySlug }) => {
   );
 };
 
-export default CategoryGalleryGoEdu;
+export default CategoryGalleryEdukaro;
 
 {/* CSS styles */}
 <style jsx>{`

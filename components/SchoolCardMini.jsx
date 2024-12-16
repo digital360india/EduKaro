@@ -15,7 +15,7 @@ import { BiSolidPhoneCall } from "react-icons/bi";
 import { StarRating, StarRatingper } from "./StarRating";
 import { PiStudentFill } from "react-icons/pi";
 import Enquire from "./Enquire";
-import CategoryGalleryGoEdu from "./CategoryGalleryGoEdu";
+import CategoryGalleryEdukaro from "./CategoryGalleryEdukaro";
 import ConsultationPopup from "./ConsultationPopup";
 
 const SchoolCardMini = ({ data, index, citySlug }) => {
@@ -80,7 +80,7 @@ const SchoolCardMini = ({ data, index, citySlug }) => {
                 />
               </div> */}
 
-                <CategoryGalleryGoEdu
+                <CategoryGalleryEdukaro
                   data={data}
                   index={index}
                   citySlug={citySlug}

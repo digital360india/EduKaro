@@ -2,7 +2,7 @@ import { base } from "@/app/api/airtable.jsx";
 import Hero from "@/components/Hero";
 import FAQ from "@/components/FAQ";
 import CategoryPage from "@/components/CategoryPage";
-import CategoryHeroGoEdu from "@/components/CategoryHeroGoEdu";
+import CategoryHeroEduKaro from "@/components/CategoryHeroEduKaro";
 import Head from "next/head";
 
 async function getCategoryData(slug) {
@@ -100,7 +100,7 @@ export default async function ListingPage({ params }) {
 
 
       <div className="overflow-hidden md:overflow-visible">
-        <CategoryHeroGoEdu />
+        <CategoryHeroEduKaro />
         <CategoryPage categorydata={categorydata} />
         <FAQ categoryData={categorydata} />
       </div>

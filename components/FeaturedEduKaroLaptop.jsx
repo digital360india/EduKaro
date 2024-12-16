@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import FeaturedGoEduMobile from "./FeaturedGoEduMobile";
+import FeaturedEduKaroMobile from "./FeaturedEduKaroMobile";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -131,7 +131,7 @@ const Gallery = () => {
   );
 };
 
-const FeaturedGoEduLaptop = () => {
+const FeaturedEduKaroLaptop = () => {
   const containerRef = useRef(null);
   const circleRef = useRef(null);
   const [showGallery, setShowGallery] = useState(false);
@@ -214,10 +214,10 @@ const FeaturedGoEduLaptop = () => {
       </div>
 
       <div className="md:hidden">
-        <FeaturedGoEduMobile />
+        <FeaturedEduKaroMobile />
       </div>
     </>
   );
 };
 
-export default FeaturedGoEduLaptop;
+export default FeaturedEduKaroLaptop;

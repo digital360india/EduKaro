@@ -2,9 +2,9 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import edukaro from "@/public/edukaro.svg";
-import SchoolByCitiesGoedu from "./SchoolByCitiesGoedu";
+import SchoolByCitiesEduKaro from "./SchoolByCitiesEduKaro";
 
-const AboutSchool123 = () => {
+const AboutEdukaro = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [showContent, setShowContent] = useState(false);
 
@@ -100,7 +100,7 @@ const AboutSchool123 = () => {
       </div>
 
       <div className="md:hidden">
-        <SchoolByCitiesGoedu />
+        <SchoolByCitiesEduKaro />
       </div>
 
       <div className="hidden md:block">
@@ -290,4 +290,4 @@ const AboutSchool123 = () => {
   );
 };
 
-export default AboutSchool123;
+export default AboutEdukaro;

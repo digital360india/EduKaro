@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const WhyChooseUsSchool123 = () => {
+const WhyChooseUsEduKaro = () => {
   return (
 
 
@@ -114,4 +114,4 @@ const WhyChooseUsSchool123 = () => {
   );
 };
 
-export default WhyChooseUsSchool123;
+export default WhyChooseUsEduKaro;

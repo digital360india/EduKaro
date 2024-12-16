@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Blink from "./Blink";
 
-const CategoryHeroGoEdu = () => {
+const CategoryHeroEduKaro = () => {
   return (
     <>
       <div className="relative">
@@ -29,4 +29,4 @@ const CategoryHeroGoEdu = () => {
   );
 };
 
-export default CategoryHeroGoEdu;
+export default CategoryHeroEduKaro;

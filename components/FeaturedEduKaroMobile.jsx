@@ -187,7 +187,7 @@ const schools = [
 ];
 
 
-export default function FeaturedGoEduMobile() {
+export default function FeaturedEduKaroMobile() {
   return (
     <div className="flex flex-col justify-start items-start overflow-hidden pb-16 pt-10 bg-gradient-to-b from-[#1B6EA1] via-[#1B6EA1] to-[#27AAE1] px-6 md:px-8 lg:px-10">
       <p className="text-[22px] text-white mb-8">Featured Schools</p>

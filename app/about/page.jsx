@@ -1,5 +1,5 @@
 
-import AboutUsSchool123 from "@/components/AboutUsSchool123";
+import AboutUsSchool123 from "@/components/AboutUsEdukaro";
 
 
 export async function generateMetadata() {

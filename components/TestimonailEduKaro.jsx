@@ -84,7 +84,7 @@ const CustomRightArrow = ({ onClick }) => {
   );
 };
 
-const TestimonailSchool123 = () => {
+const TestimonailEduKaro = () => {
   return (
     <div className="bg-gradient-custom p-1">
       {" "}
@@ -149,4 +149,4 @@ const TestimonailSchool123 = () => {
   );
 };
 
-export default TestimonailSchool123;
+export default TestimonailEduKaro;

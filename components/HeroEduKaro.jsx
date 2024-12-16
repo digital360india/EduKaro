@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 
-const HeroSchool123 = () => {
+const HeroEduKaro = () => {
   return (
     <div className="md:relative mt-16">
       <Image
@@ -36,4 +36,4 @@ const HeroSchool123 = () => {
   );
 };
 
-export default HeroSchool123;
+export default HeroEduKaro;

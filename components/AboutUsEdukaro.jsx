@@ -3,7 +3,7 @@ import React from "react";
 import MascotAnimation from "./MascotAnimation";
 import Image from "next/image";
 
-const AboutUsSchool123 = () => {
+const AboutUsEdukaro = () => {
   return (
     <>
       {/* <div className="absolute">
@@ -214,4 +214,4 @@ const AboutUsSchool123 = () => {
   );
 };
 
-export default AboutUsSchool123;
+export default AboutUsEdukaro;

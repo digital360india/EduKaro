@@ -1,12 +1,12 @@
 
 
 import "./globals.css";
-import HeroSchool123 from "@/components/HeroSchool123";
-import FormSchool123 from "@/components/FormSchool123";
-import WhyChooseUsSchool123 from "@/components/WhyChooseUsSchool123";
-import AboutSchool123 from "@/components/AboutSchool123";
-import TestimonailSchool123 from "@/components/TestimonailSchool123";
-import MapSchool123 from "@/components/MapSchool123";
+import HeroEduKaro from "@/components/HeroEduKaro";
+import FormEduKaro from "@/components/FormEduKaro";
+import WhyChooseUsEduKaro from "@/components/WhyChooseUsEduKaro";
+import AboutEdukaro from "@/components/AboutEdukaro";
+import TestimonailEduKaro from "@/components/TestimonailEduKaro";
+import MapEduKaro from "@/components/MapEduKaro";
 import MobileAnimation from "@/components/MobileAnimation";
 
 export async function generateMetadata() {
@@ -97,15 +97,15 @@ export async function generateMetadata() {
 export default function Home() {
   return (
     <div>
-      <HeroSchool123 />
-      <FormSchool123 />
-      <MapSchool123 />
-      <WhyChooseUsSchool123 />
+      <HeroEduKaro />
+      <FormEduKaro />
+      <MapEduKaro />
+      <WhyChooseUsEduKaro />
       <div className="md:hidden">
         <MobileAnimation />
       </div>
-      <AboutSchool123 />
-      <TestimonailSchool123 />
+      <AboutEdukaro />
+      <TestimonailEduKaro />
     </div>
   );
 }
