@@ -7,27 +7,27 @@ const SchoolByCitiesEduKaro = () => {
   const cities = [
     {
       name: "india",
-      bannerSrc: "/indiaschool1.svg",
+      bannerSrc: "/indiaschool2.svg",
       bottomSrc: "/locationbottom.svg",
     },
     {
       name: "mussoorie",
-      bannerSrc: "/mussorie1.svg",
+      bannerSrc: "/mussorie2.svg",
       bottomSrc: "/locationbottom.svg",
     },
     {
       name: "dehradun",
-      bannerSrc: "/dehradun1.svg",
+      bannerSrc: "/dehradun2.svg",
       bottomSrc: "/locationbottom.svg",
     },
     {
       name: "bangalore",
-      bannerSrc: "/banglore1.svg",
+      bannerSrc: "/banglore2.svg",
       bottomSrc: "/locationbottom.svg",
     },
     {
       name: "shimla",
-      bannerSrc: "/shimla1.svg",
+      bannerSrc: "/shimla2.svg",
       bottomSrc: "/locationbottom.svg",
     },
   ];
