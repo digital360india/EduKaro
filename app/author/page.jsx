@@ -26,6 +26,18 @@ export default function page() {
                 alt="AirMax Pro"
                 className="z-0 h-full w-full rounded-lg object-cover"
               />
+               
+               <div className=" text-[16px] mt-6">
+                <p className=" text-[20px] font-bold">
+                Know More
+                </p>
+                
+                <a target="_blank" href="https://www.negivaibhav.com/">
+                  <p className="text-blue-500 underline">negivaibhav.com</p>
+                </a>
+              </div>
+
+
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
               <div className="absolute bottom-4 left-4 text-left">
                 <h1 className="text-lg font-semibold  text-white">
@@ -34,7 +46,7 @@ export default function page() {
                 <p className="text-sm text-gray-300 pb-2">Author</p>
               </div>
             </div>
-            <div className="flex flex-col gap-5 w-[300px] md:w-[600px] lg:w-[900px]  leading-[1.4rem]">
+            <div className="flex flex-col gap-5 w-[300px] md:w-[600px] lg:w-[900px]  leading-[1.4rem] mt-14 md:mt-0 lg:mt-0">
               <div className="lg:text-start text-center">
                 <h2 className="font-bold text-2xl text-black">Vaibhav Negi</h2>
                 <p className="text-black">Educational Content Specialist</p>
