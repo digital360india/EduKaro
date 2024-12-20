@@ -93,8 +93,14 @@ const AboutEdukaro = () => {
           </button>
 
           <div className="p-[46px] text-justify overflow-y-auto h-full text-[13px]">
-          Edu Karo is your trusted partner in finding the best boarding schools across India. Our user-friendly platform streamlines your search by offering detailed insights and accurate information about top institutions. Whether you prioritize academic achievements, modern facilities, or a supportive environment, Edu Karo helps you make well-informed decisions for your child&apos;s education. Let us guide you through the journey of selecting the perfect boarding school for a brighter future.
-
+            Edu Karo is your trusted partner in finding the best boarding
+            schools across India. Our user-friendly platform streamlines your
+            search by offering detailed insights and accurate information about
+            top institutions. Whether you prioritize academic achievements,
+            modern facilities, or a supportive environment, Edu Karo helps you
+            make well-informed decisions for your child&apos;s education. Let us
+            guide you through the journey of selecting the perfect boarding
+            school for a brighter future.
           </div>
         </div>
       </div>
@@ -226,8 +232,15 @@ const AboutEdukaro = () => {
               <div
                 className={`h-full px-[100px] overflow-y-auto  text-[1rem]  `}
               >
-                Edu Karo is your trusted partner in finding the best boarding schools across India. Our user-friendly platform streamlines your search by offering detailed insights and accurate information about top institutions. Whether you prioritize academic achievements, modern facilities, or a supportive environment, Edu Karo helps you make well-informed decisions for your child&apos;s education. Let us guide you through the journey of selecting the perfect boarding school for a brighter future.
-
+                Edu Karo is your trusted partner in finding the best boarding
+                schools across India. Our user-friendly platform streamlines
+                your search by offering detailed insights and accurate
+                information about top institutions. Whether you prioritize
+                academic achievements, modern facilities, or a supportive
+                environment, Edu Karo helps you make well-informed decisions for
+                your child&apos;s education. Let us guide you through the
+                journey of selecting the perfect boarding school for a brighter
+                future.
                 <div className="flex justify-center items-center text-[#323232] space-x-60 pt-10">
                   <div className="space-y-1">
                     <Image

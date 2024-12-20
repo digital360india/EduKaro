@@ -45,7 +45,7 @@ export const About = () => {
           search process, providing detailed listings and transparent
           information. Whether you seek academic excellence, state-of-the-art
           facilities, or a nurturing environment, Edu123 ensures you make
-          informed choices for your child's future. Trust us to guide you in
+          informed choices for your child&apos;s future. Trust us to guide you in
           navigating the vast landscape of boarding schools nationwide.
         </p>
       </div>
