@@ -24,76 +24,62 @@ export default function page() {
             />
           </div>
           <p className="text-[24px] font-semibold">
-            Welcome to Go Edu&apos;s Privacy Policy
+            Edu Karo&apos;s Commitment to Your Privacy
           </p>
           <p>
-            At Go Edu, protecting your privacy is a top priority. This policy
-            outlines the types of information we collect, how it&apos;s used,
-            and our commitment to secure your data. It applies specifically to
-            Go Edu&apos;s website and related electronic communications.
+            At Edu Karo, we prioritize your trust and privacy. This policy
+            explains how we collect, use, and protect your data while ensuring
+            transparency in our practices.
           </p>
           <p>
             {" "}
-            <p className="text-[24px] font-semibold">
-              Information We Collect and How It&apos;s Used
-            </p>
-            Go Edu collects various details to enhance your experience. This
-            includes basic personal information, connection details, and
-            user-generated content like feedback. Your information helps us
-            deliver tailored services, notify you of updates, and ensure a
-            smooth, personalized experience.
+            <p className="text-[24px] font-semibold">Data We Collect</p>
+            To provide tailored guidance, we collect basic information like your
+            name, contact details, and preferences. This helps us offer
+            personalized recommendations and updates relevant to your needs.
           </p>
           <p>
             <p className="text-base font-semibold mb-1">
-              Automated Data Collection and Purpose
+              Enhancing Your Experience
             </p>
-            To improve functionality, our site employs technology that gathers
-            insights into device usage, browsing activity, and preferences. This
-            allows us to deliver optimized services, maintain account
-            communication, fulfill agreements, and keep you updated on any
-            website or service changes.
+            We use analytical tools to understand user behavior, allowing us to
+            refine our services and create features that better suit your
+            requirements.
           </p>
           <p>
             <p className="text-base font-semibold mb-1">
-              Our Commitment to Data Security
+              Your Data, Safeguarded
             </p>
-            Safeguarding your information is central to our mission. Go Edu has
-            established robust security measures to prevent unauthorized access
-            or alteration. However, while we take extensive precautions,
-            absolute security over the internet cannot be guaranteed.
+            Edu Karo employs robust security measures to protect your data from
+            unauthorized access. While no system is foolproof, we are committed
+            to minimizing risks and ensuring secure data management.
+          </p>
+          <p>
+            <p className="text-[24px] font-semibold">Controlled Sharing</p>
+            Any data shared with trusted partners is strictly for improving your
+            experience and is done within clearly defined parameters with your
+            consent.
           </p>
           <p>
             <p className="text-[24px] font-semibold">
-              Responsible Information Sharing
+              Evolving with Transparency
             </p>
-            Go Edu may share aggregated, anonymized information, or personal
-            data with affiliates and trusted partners to support our services.
-            Personal data sharing occurs only as outlined here, with your
-            consent, or for specific services you&apos;ve requested.
+            As Edu Karo grows, our privacy practices may adapt. Significant
+            updates to this policy will always be communicated to you clearly
+            and promptly.
           </p>
+
           <p>
-            <p className="text-[24px] font-semibold">
-              Updates to Our Privacy Policy{" "}
-            </p>
-            As part of our commitment to transparency, Go Edu regularly reviews
-            and updates its privacy practices. Any significant updates will be
-            noted on our homepage, ensuring that you remain informed.
-          </p>
-          <p>
-            <p className="text-[24px] font-semibold">
-              Changes to Our Privacy Policy
-            </p>
-            We regularly update our privacy policy on this page. Significant
-            changes in how we handle user information will be communicated
-            through a notice on the website's homepage.
-          </p>
-          <p>
-            <p className="text-[24px] font-semibold">How to Reach Us</p>
-            We&apos;re here for any privacy-related inquiries or feedback. You
-            can contact us directly via email or phone for assistance: :
+            <p className="text-[24px] font-semibold">Connect with Us</p>
+            For privacy-related concerns or queries, reach out anytime:
             <br />
             <p>Email: info@goedu.in</p>
             <p>Contact Number:01353530324, 9557695360</p>
+          </p>
+
+          <p>
+            Thank you for trusting Edu Karo. We&apos;re dedicated to protecting your
+            privacy while helping you navigate educational opportunities.
           </p>
         </div>
       </div>

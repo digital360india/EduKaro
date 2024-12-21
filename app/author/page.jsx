@@ -26,17 +26,14 @@ export default function page() {
                 alt="AirMax Pro"
                 className="z-0 h-full w-full rounded-lg object-cover"
               />
-               
-               <div className=" text-[16px] mt-6">
-                <p className=" text-[20px] font-bold">
-                Know More
-                </p>
-                
+
+              <div className=" text-[16px] mt-6">
+                <p className=" text-[20px] font-bold">Know More</p>
+
                 <a target="_blank" href="https://www.negivaibhav.com/">
                   <p className="text-blue-500 underline">negivaibhav.com</p>
                 </a>
               </div>
-
 
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
               <div className="absolute bottom-4 left-4 text-left">
@@ -52,45 +49,34 @@ export default function page() {
                 <p className="text-black">Educational Content Specialist</p>
               </div>
               <p>
-                Hi, I&apos;m Vaibhav Negi! With a deep passion for education and a
-                knack for crafting meaningful content, I have spent over three
-                years in digital marketing, focusing primarily on the
-                educational sector. Writing has always been my way of connecting
-                with people, and throughout my career, I've been fortunate to
-                create impactful content that helps students, parents, and
-                educators alike.
+                Hi! I&apos;m Vaibhav Negi, an educational content specialist with
+                over three years of experience in creating student-centric
+                resources. My passion lies in making education accessible,
+                engaging, and actionable for students and families across India.
               </p>
               <p>
-                My journey in content creation began in digital marketing, where
-                I quickly found my true calling within the education niche.
-                Since then, I&apos;ve collaborated with several educational
-                platforms, offering content that guides students and families,
-                explores emerging trends, and supports educators in their
-                mission. My goal is to create content that informs and inspires
-                curiosity and confidence.
+                At Edu Karo, I specialize in crafting content that demystifies
+                the complexities of the school search and admission process.
+                From providing detailed school profiles to curating practical
+                advice, my aim is to empower families to make informed decisions
+                about their educational journeys.
               </p>
               <p>
-                At Go Edu, I specialize in creating insightful, trustworthy, and
-                contextually relevant content for the Indian education
-                landscape. My writing is tailored to empower parents and
-                students in selecting the best boarding schools by providing
-                in-depth details on each institution&apos;s culture, curriculum, and
-                offerings. I&apos;m committed to ensuring each article, guide, and
-                review is as enlightening as it is engaging, capturing the
-                unique aspects of India&apos;s diverse educational framework.
+                With a background in digital storytelling, I bring a creative
+                and relatable approach to educational content. My work
+                emphasizes clarity, trust, and a humanized voice that resonates
+                with readers, ensuring Edu Karo remains a dependable resource
+                for navigating the academic landscape.
               </p>
               <p>
-                Beyond education, I&apos;ve expanded my experience as a freelance
-                writer with Sportskeeda, diving into the sports domain and
-                refining my versatility in adapting to different audiences. This
-                diversity in experience has sharpened my ability to resonate
-                with readers, no matter the topic while maintaining quality and
-                authenticity in each piece.
+                Beyond my professional journey, I&apos;ve explored various niches,
+                including lifestyle and personal development writing, which has
+                enriched my ability to connect with diverse audiences.
               </p>
               <p>
-                At Go Edu, my mission is to simplify and enrich the school
-                selection process by delivering content that helps students and
-                their families make informed decisions.
+                Through Edu Karo, I&apos;m committed to supporting families as they
+                explore, evaluate, and choose the best educational paths.
+                Together, let&apos;s make informed choices for brighter futures.
               </p>
             </div>
           </div>
