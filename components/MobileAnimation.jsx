@@ -53,7 +53,7 @@ const MobileAnimation = () => {
               />
 
               {/* {index < reasons.length - 1 && ( */}
-              <div className="w-[2px] h-24 bg-[#1B6EA1] mt-2"></div>
+              <div className="w-[2px] h-24 bg-background-dark mt-2"></div>
               {/* )} */}
             </div>
             <div className="flex-1">

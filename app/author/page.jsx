@@ -29,7 +29,6 @@ export default function page() {
 
               <div className=" text-[16px] mt-6">
                 <p className=" text-[20px] font-bold">Know More</p>
-
                 <a target="_blank" href="https://www.negivaibhav.com/">
                   <p className="text-blue-500 underline">negivaibhav.com</p>
                 </a>
