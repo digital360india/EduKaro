@@ -54,7 +54,7 @@ export default function ConsultationPopup({ setClose }) {
       <div className="relative md:flex   gap-5  md:items-center bg-white rounded-lg shadow-lg w-full max-w-[90vw] md:max-w-[80vw] ">
         <button
           onClick={setClose}
-          className="absolute bg-[#1B6EA1] px-1 py-1 md:px-2 z-50 rounded-full  md:py-2 top-2 right-2 text-2xl font-bold text-white hover:text-gray-900"
+          className="absolute bg-background-dark px-1 py-1 md:px-2 z-50 rounded-full  md:py-2 top-2 right-2 text-2xl font-bold text-white hover:text-white"
         >
           <div className="flex justify-center items-center">
             <RxCross1 />
@@ -185,16 +185,16 @@ export default function ConsultationPopup({ setClose }) {
                 <option value="Class 12">Class 12</option>
               </select>
             </div>
-            <div className="md:pt-20 pt-8 cursor-pointer">
+            <div className="md:pt-4 pt-4 cursor-pointer">
 
 
               <button
                 type="submit"
                 disabled={loading}
-                className={`md:w-[177px] md:h-[60px] md:px-0 px-8 md:py-0 py-3  bg-[#1B6EA1] text-white p-2 rounded-lg ${
+                className={`md:w-[177px] md:h-[60px] md:px-0 px-8 md:py-0 py-3  bg-background-dark text-white p-2 rounded-lg ${
                   loading
                     ? "cursor-not-allowed opacity-70"
-                    : "hover:bg-[#1b6ea1c9]"
+                    : "hover:bg-background-light"
                 }`}
               >
                 {loading ? "Submitting..." : "Submit"}
