@@ -14,16 +14,14 @@ const HeroEduKaro = () => {
         className="w-full h-full object-cover hidden md:block"
       />
 
-      
-      <div className="md:hidden">
-      <Image
-        src="/edukaroframe2.svg"
-        alt="School choice"
-        width={1000}
-        height={1000}
-        className="w-full h-[82vh] object-cover  "
-      />
-
+      <div className="md:hidden w-full h-full">
+        <Image
+          src="/edukaroframe23.png"
+          alt="School choice"
+          width={1000}
+          height={1000}
+          className="w-full h-full object-cover"
+        />
       </div>
     </div>
   );
