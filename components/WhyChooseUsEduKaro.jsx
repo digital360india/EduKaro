@@ -7,7 +7,7 @@ const WhyChooseUsEduKaro = () => {
 
     
     <>
-      <div className="bg-[#FFFFF] hidden md:block ">
+      <div className="bg-[#FFFFF] hidden xl:block ">
         <h1 className="text-center text-[#323232] text-[2.25rem] mt-10">
           Why Choose Us?
         </h1>

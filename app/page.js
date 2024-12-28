@@ -101,7 +101,7 @@ export default function Home() {
       <FormEduKaro />
       <MapEduKaro />
       <WhyChooseUsEduKaro />
-      <div className="md:hidden">
+      <div className="xl:hidden">
         <MobileAnimation />
       </div>
       <AboutEdukaro />
