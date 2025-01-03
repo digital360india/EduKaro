@@ -183,7 +183,7 @@ export const FooterLinks = () => {
 
         <div className="text-center  pb-4">
           <p>
-            <a href="mailto:info@goedu.in">info@goedu.in</a>
+            <a>info@edukaro.com</a>
           </p>
         </div>
       </div>
