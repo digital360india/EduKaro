@@ -24,12 +24,12 @@ export async function generateMetadata({ params }) {
     keywords: categorydata?.keywords,
     authors: [{ name: categorydata?.author }],
     alternates: {
-      canonical: `https://www.edu123.in/category/${params.slug}`,
+      canonical: `https://www.edukaro.com/category/${params.slug}`,
     },
     openGraph: {
       title: categorydata?.title,
       description: categorydata?.meta_description,
-      url: `https://www.edu123.in/${params.slug}`,
+      url: `https://www.edukaro.com/${params.slug}`,
       locale: "en_US",
       type: "website",
       images: [{ url: categorydata?.featuredImg }],

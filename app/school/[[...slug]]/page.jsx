@@ -40,7 +40,7 @@
 //     description: categorydata?.Meta_description,
 //     keywords: categorydata?.Meta_keywords,
 //     alternates: {
-//       canonical: `https://www.edu123.in/school/${params.slug[0]}/${params.slug[1]}`,
+//       canonical: `https://www.edukaro.com/school/${params.slug[0]}/${params.slug[1]}`,
 //     },
 
 //     robots: {
@@ -94,7 +94,7 @@
 //           property="og:description"
 //           content="Find your dream boarding school in seconds with Edu123. Unlock a world of educational possibilities. Your path to the perfect education begins here."
 //         />
-//         <meta property="og:url" content="https://www.edu123.in/" />
+//         <meta property="og:url" content="https://www.edukaro.com/" />
 //         <meta property="og:site_name" content="Edu123" />
 //         <meta
 //           property="og:image"
@@ -108,7 +108,7 @@
 //             __html: JSON.stringify({
 //               "@context": "http://schema.org",
 //               "@type": "WebPage",
-//               url: `https://www.edu123.in/school/${schoolData.sheetName}/${schoolData.slug}`,
+//               url: `https://www.edukaro.com/school/${schoolData.sheetName}/${schoolData.slug}`,
 //               name: schoolData.name,
 //               description: schoolData.Meta_description,
 //             }),
@@ -126,18 +126,18 @@
 //                   "@type": "ListItem",
 //                   position: 1,
 //                   name: "Edu123",
-//                   item: "https://www.edu123.in",
+//                   item: "https://www.edukaro.com",
 //                 },
 //                 {
 //                   "@type": "ListItem",
 //                   position: 2,
 //                   name: schoolData.Town,
-//                   item: `https://www.edu123.in/category/boarding-schools-in-${schoolData.sheetName}`,
+//                   item: `https://www.edukaro.com/category/boarding-schools-in-${schoolData.sheetName}`,
 //                 },
 //                 {
 //                   "@type": "ListItem",
 //                   position: 3,
-//                   url: `https://www.edu123.in/school/${schoolData.sheetName}/${schoolData.slug}`,
+//                   url: `https://www.edukaro.com/school/${schoolData.sheetName}/${schoolData.slug}`,
 //                   name: schoolData.name,
 //                 },
 //               ],
@@ -153,7 +153,7 @@
 //               "@type": "School",
 //               name: schoolData.name,
 //               description: schoolData.Meta_Description,
-//               url: `https://www.edu123.in/school/${schoolData.sheetName}/${schoolData.slug}`,
+//               url: `https://www.edukaro.com/school/${schoolData.sheetName}/${schoolData.slug}`,
 //               image: [
 //                 "https://res.cloudinary.com/eduminatti-com/image/upload/v1722065379/Edu123/" +
 //                   schoolData.sheetName +
@@ -321,7 +321,7 @@
 //               sku: schoolData.numOfReviews > 0 ? schoolData.numOfReviews : 25,
 //               offers: {
 //                 "@type": "AggregateOffer",
-//                 url: `https://www.edu123.in/school/${schoolData.sheetName}/${schoolData.slug}`,
+//                 url: `https://www.edukaro.com/school/${schoolData.sheetName}/${schoolData.slug}`,
 //                 priceCurrency: "INR",
 //                 lowPrice: "",
 //                 offerCount: "1",
@@ -396,7 +396,7 @@ export async function generateMetadata({ params }) {
     description: categorydata?.Meta_description,
     keywords: categorydata?.Meta_keywords,
     alternates: {
-      canonical: `https://www.edu123.in/school/${params.slug[0]}/${params.slug[1]}`,
+      canonical: `https://www.edukaro.com/school/${params.slug[0]}/${params.slug[1]}`,
     },
     robots: {
       index: true,
@@ -408,7 +408,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: "Find the Best Boarding Schools in Seconds | Edu123",
       description: "Find your dream boarding school in seconds with Edu123. Unlock a world of educational possibilities. Your path to the perfect education begins here.",
-      url: "https://www.edu123.in/",
+      url: "https://www.edukaro.com/",
       images: [
         `https://res.cloudinary.com/infoedu123/image/upload/v1703243169/EDU123/edu123HomeD.png`,
       ],
@@ -427,7 +427,7 @@ export async function generateMetadata({ params }) {
       {
         "@context": "http://schema.org",
         "@type": "WebPage",
-        url: `https://www.edu123.in/school/${sheetName}/${categorydata.slug}`,
+        url: `https://www.edukaro.com/school/${sheetName}/${categorydata.slug}`,
         name: categorydata.name,
         description: categorydata.Meta_description,
       },
@@ -439,18 +439,18 @@ export async function generateMetadata({ params }) {
             "@type": "ListItem",
             position: 1,
             name: "Edu123",
-            item: "https://www.edu123.in",
+            item: "https://www.edukaro.com",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: categorydata.Town,
-            item: `https://www.edu123.in/category/boarding-schools-in-${sheetName}`,
+            item: `https://www.edukaro.com/category/boarding-schools-in-${sheetName}`,
           },
           {
             "@type": "ListItem",
             position: 3,
-            url: `https://www.edu123.in/school/${sheetName}/${categorydata.slug}`,
+            url: `https://www.edukaro.com/school/${sheetName}/${categorydata.slug}`,
             name: categorydata.name,
           },
         ],
@@ -460,7 +460,7 @@ export async function generateMetadata({ params }) {
         "@type": "School",
         name: categorydata.name,
         description: categorydata.Meta_description,
-        url: `https://www.edu123.in/school/${sheetName}/${categorydata.slug}`,
+        url: `https://www.edukaro.com/school/${sheetName}/${categorydata.slug}`,
         image: [
           `https://res.cloudinary.com/eduminatti-com/image/upload/v1722065379/Edu123/${sheetName}/G-${imageCode}.png`,
           `https://res.cloudinary.com/eduminatti-com/image/upload/v1722065379/Edu123/${sheetName}/H-${imageCode}.png`,
