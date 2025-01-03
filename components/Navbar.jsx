@@ -88,7 +88,6 @@ const Navbar = () => {
   const toggleBookingClosePopup = () => {
     setIsOpenpopup(false);
   };
-
   return (
     <div>
       <nav

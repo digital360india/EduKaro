@@ -40,9 +40,10 @@ export const FooterLinks = () => {
              
               <Link
                 href={
-                  "https://www.edukaro.com/category/boarding-schools-in-bangaluru"
+                  "https://www.edukaro.com/category/boarding-schools-in-bangalore"
                 }
               >
+                
                 Boarding Schools in Bangalore
               </Link>
               <Link
