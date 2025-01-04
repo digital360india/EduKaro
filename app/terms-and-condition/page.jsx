@@ -97,7 +97,7 @@ const TermsAndCondition = () => {
             </p>
 
             <br />
-            <p>Email: info@goedu.in</p>
+            <p>Email: info@edukaro.in</p>
             <p>
               Contact Number: 01353530324, 9557695360
               <p className="pt-4">

@@ -73,7 +73,7 @@ export default function page() {
             <p className="text-[24px] font-semibold">Connect with Us</p>
             For privacy-related concerns or queries, reach out anytime:
             <br />
-            <p>Email: info@goedu.in</p>
+            <p>Email: info@edukaro.in</p>
             <p>Contact Number:01353530324, 9557695360</p>
           </p>
 
