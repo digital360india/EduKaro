@@ -119,7 +119,7 @@ export const Footer = () => {
               </Link> */}
 
               <Link
-                href="https://www.instagram.com/goedu_india?igsh=MWtyaGFocGo4cHA0bQ=="
+                href="https://www.instagram.com/edukaro_india?igsh=OG1rcDBtcHdwYWg1"
                 target="_blank"
               >
                 <BsInstagram />

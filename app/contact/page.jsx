@@ -10,7 +10,7 @@ export async function generateMetadata() {
   return {
     title: "Contact Us",
     description:
-      "Welcome to GoEdu - The ultimate guide to the best schools in the United Arab Emirates! ",
+      "Welcome to EduKaro - The ultimate guide to the best schools in the United Arab Emirates! ",
   };
 }
 
@@ -54,13 +54,13 @@ const Contact = () => {
                 <div className="flex justify-between">
                   <div className="flex gap-4 pt-5  ">
                     <a
-                      href="https://www.instagram.com/goedu_india/?igsh=MWtyaGFocGo4cHA0bQ%3D%3D"
+                      href="https://www.instagram.com/edukaro_india?igsh=OG1rcDBtcHdwYWg1"
                       target="_blank"
                     >
                       <BsInstagram className="w-5 h-5" />
                     </a>
                     <a
-                      href="https://www.facebook.com/people/GoEdu/61552427439719/"
+                      href="https://www.facebook.com/people/EduKaro/61552427439719/"
                       target="_blank"
                     >
                       <BiLogoFacebook className="w-5 h-5" />

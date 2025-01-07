@@ -4,7 +4,7 @@ export async function generateMetadata() {
   return {
     title: "Terms and Condition",
     description:
-      "Welcome to GoEdu - The ultimate guide to the best schools in the United Arab Emirates! ",
+      "Welcome to EduKaro - The ultimate guide to the best schools in the United Arab Emirates! ",
   };
 }
 

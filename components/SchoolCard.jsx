@@ -75,6 +75,18 @@ const SchoolCard = ({ categorydata }) => {
                 categorydata.slug === `full-boarding-schools-in-${citySlug}`
               ) {
                 return item?.fields?.full_boarding_schools === "checked";
+              } else if (
+                categorydata.slug === `icse-boarding-schools-in-${citySlug}`
+              ) {
+                return item?.fields?.icse_isc_schools === "checked";
+              } else if (
+                categorydata.slug === `coed-boarding-schools-in-${citySlug}`
+              ) {
+                return item?.fields?.coed_schools === "checked";
+              } else if (
+                categorydata.slug === `cbse-boarding-schools-in-${citySlug}`
+              ) {
+                return item?.fields?.cbse_schools === "checked";
               } else {
                 return true;
               }
@@ -90,7 +102,7 @@ const SchoolCard = ({ categorydata }) => {
                 ) {
                   return (
                     b?.fields[categorydata?.filtType] -
-                    a?.fields[categorydata?.filtType]
+                    a?.fields[categoryData?.filtType]
                   );
                 } else if (categorydata?.filtType in a?.fields) {
                   return -1;
