@@ -45,20 +45,16 @@ const SchoolCardMini = ({ data, index, citySlug }) => {
     setViewers(randomViewers);
   }, []);
 
+  //  popup
+  const [isOpenpopup, setIsOpenpopup] = useState(false);
 
+  const toggleBookingPopup = () => {
+    setIsOpenpopup(true);
+  };
 
-    //  popup
-    const [isOpenpopup, setIsOpenpopup] = useState(false);
-  
-    const toggleBookingPopup = () => {
-      setIsOpenpopup(true);
-    };
-  
- 
-  
-    const toggleBookingClosePopup = () => {
-      setIsOpenpopup(false);
-    };
+  const toggleBookingClosePopup = () => {
+    setIsOpenpopup(false);
+  };
 
   return (
     <>
@@ -252,22 +248,29 @@ const SchoolCardMini = ({ data, index, citySlug }) => {
             </div>
             <div className="flex text-[12px] items-center text-[#898989] gap-2">
               <div>
-              <IoLocationSharp className="text-[20px]" />
+                <IoLocationSharp className="text-[20px]" />
               </div>
               <div className="w-[90%]">
-              <p className=""> {data?.fields?.fullAddress}</p>
+                <p className=""> {data?.fields?.fullAddress}</p>
               </div>
             </div>
             <StarRating
               rating={data?.fields?.rating}
               review={data?.fields?.numOfReviews}
             />
-            <div className="text-[#505050] flex pt-[1px] flex-col ">
-              <p className="text-[12px] text-[#898989]">Annual Fees</p>
-              <p className="text-[18px] font-semibold text-background-dark ">
-                ₹{Number(data?.fields?.feefrom).toLocaleString("en-IN")} - ₹
-                {Number(data?.fields?.feeto).toLocaleString("en-IN")}
-              </p>
+
+            <div className="text-[#898989] flex pt-[1px] flex-col ">
+              <p className="text-[12px]  text-[#898989]">Annual Fees</p>
+              {(data?.feilds?.feefrom && data?.feilds?.feeto) !== undefined ? (
+                <p className="text-[16px] xl:text-[22px] text-background-dark">
+                  ₹{Number(data?.fields?.feefrom).toLocaleString("en-IN")} - ₹
+                  {Number(data?.fields?.feeto).toLocaleString("en-IN")}
+                </p>
+              ) : (
+                <p className="text-[16px] xl:text-[22px] text-background-dark">
+                  Not Specified
+                </p>
+              )}
             </div>
 
             {/* <div className="w-full bg-[#1B6EA1] rounded-l-2xl flex justify-center items-center float-right">
@@ -308,8 +311,6 @@ const SchoolCardMini = ({ data, index, citySlug }) => {
                       : null}
                   </p>
                 </div>
-
-                
               </div>
               <div className="space-y-3">
                 <div className="flex flex-col ">
@@ -379,14 +380,12 @@ const SchoolCardMini = ({ data, index, citySlug }) => {
         </div>
       </div>
 
-      {isOpenpopup && (
-              <ConsultationPopup setClose={toggleBookingClosePopup} />
-            )}
+      {isOpenpopup && <ConsultationPopup setClose={toggleBookingClosePopup} />}
 
       <Enquire
-         isOpen={isPopupOpen}
-         onClose={closePopup}
-         school={school?.name}
+        isOpen={isPopupOpen}
+        onClose={closePopup}
+        school={school?.name}
       />
     </>
   );
