@@ -88,8 +88,8 @@ const AboutUsEdukaro = () => {
           <div className="flex flex-col md:flex-row justify-between items-center  md:space-x-10">
             <div className="flex items-center justify-center order-1 md:order-none gap-5 md:gap-0">
               <img
-                src="./ourpassion.svg"
-                className="w-[100px] h-[110px] md:h-[160px] md:w-[150px]"
+                src="./ourpassion.png"
+                className="w-[120px] h-[110px] md:h-[160px] md:w-[150px]"
                 alt="Passion logo"
               />
               <p className="text-[16px] sm:text-[40px] font-semibold md:hidden">
@@ -178,8 +178,8 @@ const AboutUsEdukaro = () => {
                 Bringing Schools and Families Together
               </p>
               <img
-                src="/joinus.svg"
-                className="w-[100px] h-[130px] md:h-[160px] md:w-[150px]"
+                src="/joinus.png"
+                className="w-[120px] h-[130px] md:h-[160px] md:w-[150px]"
                 alt="Join us logo"
               />
             </div>
