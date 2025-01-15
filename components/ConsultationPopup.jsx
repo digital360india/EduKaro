@@ -131,7 +131,7 @@ export default function ConsultationPopup({ setClose }) {
               onChange={handleChange}
               className="p-2 border-b-2 border-[#D9D9D9] w-full h-[39px] placeholder:text-[#898989] sm:border sm:rounded sm:w-[462px] sm:border-[#D9D9D9]"
             />
-            <div className="flex">
+            <div className="flex w-full sm:w-[462px]">
               <PhoneInput
                 country={"in"}
                 value={formData.phone}
