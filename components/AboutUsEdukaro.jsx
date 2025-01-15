@@ -6,9 +6,7 @@ import Image from "next/image";
 const AboutUsEdukaro = () => {
   return (
     <>
-      {/* <div className="absolute">
-        <MascotAnimation />
-      </div> */}
+     
 
       <div className="bg-background-dark">
         <h1  
@@ -18,13 +16,7 @@ const AboutUsEdukaro = () => {
           About Us
         </h1>
 
-        {/* <Image
-              src="/abouteduline.svg"
-              width={1000}
-              height={1000}
-              alt="line"
-              className="w-[350px] h-[250px] absolute bottom-40 left-20 hidden md:block"
-            /> */}
+       
         <div className="flex justify-center items-center mb-20">
           <div className="bg-white rounded-full p-4">
             <Image
