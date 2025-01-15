@@ -26,16 +26,13 @@ export default function ConsultationPopup({ setClose }) {
     }));
   };
 
-  const handlePhoneChange = (value) => {
-    setFormData({ ...formData, phone: value });
-  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
     const airtablePayload = [
-      {
+      {   
         fields: {
           Name: formData.name,
           email: formData.email,
@@ -135,7 +132,7 @@ export default function ConsultationPopup({ setClose }) {
               <PhoneInput
                 country={"in"}
                 value={formData.phone}
-                onChange={handlePhoneChange}
+                onChange={handleChange}
                 inputStyle={{
                   width: "100%",
                   height: "40px",
