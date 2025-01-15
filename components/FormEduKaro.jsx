@@ -8,9 +8,8 @@ const FormEduKaro = () => {
 
   const [formData, setFormData] = useState({
     name: "",
-
     phone: "",
-    source : "EduKaro - www.edukaro.com"
+    source: "EduKaro - www.edukaro.com",
   });
 
   const handleChange = (e) => {
@@ -23,7 +22,7 @@ const FormEduKaro = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); 
+    setLoading(true);
     console.log(formData);
     try {
       const response = await axios.post(
@@ -35,7 +34,7 @@ const FormEduKaro = () => {
         setFormData({
           name: "",
           phone: "",
-          source : "EduKaro - www.edukaro.com"
+          source: "EduKaro - www.edukaro.com",
         });
       } else {
         alert("Try again");
@@ -43,7 +42,7 @@ const FormEduKaro = () => {
     } catch (error) {
       alert("An error occurred. Please try again.");
     } finally {
-      setLoading(false); 
+      setLoading(false);
     }
   };
 
@@ -69,7 +68,7 @@ const FormEduKaro = () => {
           </h3>
           <form onSubmit={handleSubmit} className="space-y-7">
             <input
-            required
+              required
               type="text"
               name="name"
               placeholder="Your name"
@@ -77,14 +76,6 @@ const FormEduKaro = () => {
               onChange={handleChange}
               className="p-2 border-b-2 border-[#D9D9D9] w-full h-[39px] placeholder:text-[#898989] sm:border sm:rounded lg:w-[498px] sm:border-[#D9D9D9]"
             />
-            {/* <input
-            type="email"
-            name="email"
-            placeholder="Your email"
-            value={formData.email}
-            onChange={handleChange}
-            className="p-2 border-b-2 border-[#D9D9D9] w-full h-[39px] placeholder:text-[#898989] sm:border sm:rounded sm:w-[462px] sm:border-[#D9D9D9]"
-          /> */}
             <div className="flex">
               <select className="w-[80px] md:w-[100px] h-[39px] border-b-2 border-[#D9D9D9] rounded-l placeholder:text-[#898989] sm:border sm:rounded-l sm:p-2 sm:border-[#D9D9D9]">
                 <option value="🇮🇳">🇮🇳 +91</option>
@@ -139,7 +130,7 @@ const FormEduKaro = () => {
                 <option value="🇭🇺">🇭🇺 +36</option>
               </select>
               <input
-              required
+                required
                 type="tel"
                 name="phone"
                 placeholder="Your mobile number"
@@ -149,37 +140,7 @@ const FormEduKaro = () => {
               />
             </div>
 
-            {/* <div className="flex md:gap-20 gap-8">
-            <select
-              name="class"
-              value={formData.class}
-              onChange={handleChange}
-              className="p-2 border-b-2 border-[#D9D9D9] rounded md:w-[143px] w-[120px] h-[39px] placeholder:text-[#898989] md:border md:rounded "
-            >
-              <option value="" className="text-[#898989]">
-                Class
-              </option>
-              
-            </select>
-            <select
-              name="board"
-              value={formData.board}
-              onChange={handleChange}
-              className="p-2 border-b-2 border-[#D9D9D9] rounded md:w-[143px] w-[120px] h-[39px] placeholder:text-[#898989] md:border md:rounded"
-            >
-              <option value="" className="text-[#898989]">
-                BOARD
-              </option>
-              
-            </select>
-          </div> */}
             <div className="md:pt-2 pt-8 cursor-pointer">
-              {/* <button
-                type="submit"
-                className="md:w-[160px] md:h-[50px] md:px-0 px-8 md:py-0 py-3  bg-[#1B6EA1] text-white p-2 rounded-lg hover:bg-[#1b6ea1c9]"
-              >
-                Submit
-              </button> */}
               <button
                 type="submit"
                 disabled={loading}
@@ -191,7 +152,6 @@ const FormEduKaro = () => {
               >
                 {loading ? "Submitting..." : "Submit"}
               </button>
-              
             </div>
           </form>
         </div>

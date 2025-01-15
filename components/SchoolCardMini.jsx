@@ -1,11 +1,10 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { FaGraduationCap, FaSchool } from "react-icons/fa";
 import { useState } from "react";
 import Link from "next/link";
 import {
-  IoBook,
+
   IoLocationSharp,
   IoPerson,
   IoPersonOutline,
@@ -13,8 +12,6 @@ import {
 import { RiGraduationCapFill } from "react-icons/ri";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { StarRating, StarRatingper } from "./StarRating";
-import { PiStudentFill } from "react-icons/pi";
-import Enquire from "./Enquire";
 import CategoryGalleryEdukaro from "./CategoryGalleryEdukaro";
 import ConsultationPopup from "./ConsultationPopup";
 
@@ -59,45 +56,15 @@ const SchoolCardMini = ({ data, index, citySlug }) => {
   return (
     <>
       <div className="hidden lg:block">
-        {/* <div className="float-right py-3 px-5 h-[36px] bg-[#F97B24] rounded-l-3xl flex items-center gap-2 shadow-counsel">
-          <IoPersonOutline className="text-white" size={16} />
-          <p className="text-[12px] text-[#FFFFFF]">{viewers}+ people viewed</p>
-        </div> */}
-
         <div className="lg:w-[810px] h-[500px] py-[25px] shadow-custom">
           <div className="flex  gap-5">
             <div className="">
               <div className=" ">
-                {/* <div>
-                <img
-                  className="w-[300px] h-[210px] object-cover"
-                  src={`https://res.cloudinary.com/eduminatti-com/image/upload/v1722065379/Edu123/${citySlug}/G-${data?.fields?.Image_Code}.png`}
-                  alt="img"
-                />
-              </div> */}
-
                 <CategoryGalleryEdukaro
                   data={data}
                   index={index}
                   citySlug={citySlug}
                 />
-                {/* <div className="flex justify-between">
-                <img
-                  className="w-[90px] h-[60px] object-cover"
-                  src={`https://res.cloudinary.com/eduminatti-com/image/upload/v1722065379/Edu123/${citySlug}/G-${data?.fields?.Image_Code}.png`}
-                  alt="img"
-                />
-                <img
-                  className="w-[90px] h-[60px] object-cover"
-                  src={`https://res.cloudinary.com/eduminatti-com/image/upload/v1722065379/Edu123/${citySlug}/H-${data?.fields?.Image_Code}.png`}
-                  alt="img"
-                />
-                <img
-                  className="w-[90px] h-[60px] object-cover"
-                  src={`https://res.cloudinary.com/eduminatti-com/image/upload/v1722065379/Edu123/${citySlug}/I-${data?.fields?.Image_Code}.png`}
-                  alt="img"
-                />
-              </div> */}
               </div>
             </div>
 
@@ -273,14 +240,6 @@ const SchoolCardMini = ({ data, index, citySlug }) => {
               )}
             </div>
 
-            {/* <div className="w-full bg-[#1B6EA1] rounded-l-2xl flex justify-center items-center float-right">
-                <div className="flex justify-between text-[10px] text-[#FFFFFF] w-[90%]">
-                  <div className="flex flex-col items-center space-y-1">
-                    <p className="">Curriculum</p>
-
-            </div>
-            </div>
-            </div> */}
             <div className="flex  space-x-12 p-3 font-semibold  text-[10px] bg-background-dark rounded-l-2xl text-white   w-[315px]">
               <div className="space-y-3">
                 <div className="flex flex-col ">
@@ -381,12 +340,6 @@ const SchoolCardMini = ({ data, index, citySlug }) => {
       </div>
 
       {isOpenpopup && <ConsultationPopup setClose={toggleBookingClosePopup} />}
-
-      <Enquire
-        isOpen={isPopupOpen}
-        onClose={closePopup}
-        school={school?.name}
-      />
     </>
   );
 };
