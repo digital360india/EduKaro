@@ -81,20 +81,20 @@ const FormEduKaro = () => {
 
   return (
     <>
-      <div className="flex gap-20 justify-between items-center">
-        <div className="w-[795px] h-[539px] md:block hidden  ">
+      <div className="relative w-full h-[539px]">
+        <div className="absolute inset-0 z-0">
           <Image
-            src="/BookConsultation2.svg"
+            src="/formbg.png"
             alt="School choice"
-            width={1000}
-            height={1000}
-            className="w-[795px] h-[539px] object-cover"
+            layout="fill"
+            objectFit="cover"
+            className="w-full h-full"
           />
         </div>
 
-        <div className="md:w-1/2 w-full p-6 bg-white">
+        <div className="absolute right-10 top-1/2 transform -translate-y-1/2 z-10 md:w-fit w-full p-6 bg-white bg-opacity-90 rounded-lg shadow-lg">
           <div className="md:hidden block w-[226px] text-[20px]">
-            Confuse to choose the Best School ?
+            Confuse to choose the Best School?
           </div>
           <h3 className="md:text-xl mt-8 text-[12px] mb-6 text-[#323232]">
             Fill this form and get in touch with our counsellor
@@ -125,7 +125,7 @@ const FormEduKaro = () => {
               />
             </div>
 
-            <div className="md:pt-2 pt-8 cursor-pointer">
+            <div className="md:pt-2 pt-8 cursor-pointer text-center">
               <button
                 type="submit"
                 disabled={loading}

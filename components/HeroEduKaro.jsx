@@ -7,7 +7,7 @@ const HeroEduKaro = () => {
   return (
     <div className="md:relative mt-20 w-full h-full">
       <Image
-        src="/edukaroframe1.png"
+        src="/mainhero.png"
         alt="School choice"
         width={1000}
         height={1000}
