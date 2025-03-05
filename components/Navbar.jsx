@@ -144,12 +144,12 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <nav className="block md:hidden w-full absolute top-0 z-40 bg-white">
-        <div className="justify-between px-4 mx-auto h-[80px] md:px-8">
-          <div className="flex items-center justify-between py-3 md:py-7 lg:block">
+      <nav className="block md:hidden w-full absolute top-0 z-40 bg-black">
+        <div className="justify-between px-4 mx-auto ">
+          <div className="flex items-center justify-between py-3 ">
             <Link href={"/"}>
               <img
-                className="w-14 h-14 lg:w-22"
+                className="w-10 h-10 "
                 src="/edukarologo1.png"
                 alt="Logo"
                 width={1000}

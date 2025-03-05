@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const HeroEduKaro = () => {
   return (
-    <div className="md:relative mt-20 w-full h-full">
+    <div className="md:relative mt-14 w-full h-full">
       <Image
         src="/mainhero.png"
         alt="School choice"

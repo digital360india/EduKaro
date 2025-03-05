@@ -90,7 +90,7 @@ export default function ConsultationPopup({ setClose }) {
       <div className="relative md:flex   gap-5  md:items-center bg-white rounded-lg shadow-lg w-full max-w-[90vw] md:max-w-[80vw] ">
         <button
           onClick={setClose}
-          className="absolute bg-background-dark px-1 py-1 md:px-2 z-50 rounded-full  md:py-2 top-2 right-2 text-2xl font-bold text-white hover:text-white"
+          className="absolute bg-background-dark p-1  md:px-2 z-50 rounded-full  md:py-2 top-3 right-2 text-xl font-bold text-white"
         >
           <div className="flex justify-center items-center">
             <RxCross1 />
@@ -107,11 +107,11 @@ export default function ConsultationPopup({ setClose }) {
           />
         </div>
 
-        <div className="w-full z-50 md:w-[470px] h-full rounded-l-2xl p-8 md:absolute md:top-0 md:right-14 bg-white">
-          <h3 className=" md:text-xl mb-6 text-[#323232]">
+        <div className="w-full z-50 md:w-[470px] h-full rounded-lg md:rounded-l-2xl md:p-8  md:absolute md:top-0 md:right-14 bg-white">
+        <h3 className=" md:text-xl font-bold text-[#323232] pt-4 px-5 w-[85%]">
             Fill this form and get in touch with our counsellor
           </h3>
-          <form onSubmit={handleSubmit} className="space-y-7 md:space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-7 md:space-y-6 p-5">
             <input
               required
               type="text"

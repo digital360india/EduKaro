@@ -96,7 +96,7 @@ const FormEduKaro = () => {
           <div className="md:hidden block w-[226px] text-[20px]">
             Confuse to choose the Best School?
           </div>
-          <h3 className="md:text-xl mt-8 text-[12px] mb-6 text-[#323232]">
+          <h3 className="md:text-xl text-[12px] my-6 text-[#323232]">
             Fill this form and get in touch with our counsellor
           </h3>
           <form onSubmit={handleSubmit} className="space-y-7">
@@ -107,7 +107,7 @@ const FormEduKaro = () => {
               placeholder="Your name"
               value={formData.name}
               onChange={handleChange}
-              className="p-2 border-b-2 border-[#D9D9D9] w-full h-[39px] placeholder:text-[#898989] sm:border sm:rounded lg:w-[498px] sm:border-[#D9D9D9]"
+              className="p-2 border border-[#D9D9D9] w-full h-[39px] placeholder:text-[#898989] sm:border sm:rounded lg:w-[498px] sm:border-[#D9D9D9]"
             />
             <div className="flex w-full lg:w-[498px]">
               <PhoneInput
@@ -129,7 +129,7 @@ const FormEduKaro = () => {
               <button
                 type="submit"
                 disabled={loading}
-                className={`md:w-[160px] md:h-[50px] md:px-0 px-8 md:py-0 py-3 bg-background-dark text-white p-2 rounded-lg ${
+                className={`md:w-[160px] md:h-[50px] md:px-0 px-8  bg-background-dark text-white p-2 rounded-lg ${
                   loading
                     ? "cursor-not-allowed opacity-70"
                     : "hover:bg-[#442B6F]"

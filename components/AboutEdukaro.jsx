@@ -14,7 +14,7 @@ const AboutEdukaro = () => {
         className="relative w-full h-[400px] bg-no-repeat bg-cover bg-center overflow-hidden md:hidden"
         style={{ backgroundImage: `url(${edukaro.src})` }}
       >
-        <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center z-10">
+        <div className="absolute top-0 left-0 w-full h-full flex justify-center md:items-center z-10">
           <div className="text-white grid grid-cols-2 gap-24 p-10">
             <div className="space-y-10">
               <div className="space-y-1">
@@ -37,7 +37,7 @@ const AboutEdukaro = () => {
                   height={1000}
                   className="w-[47px] h-[39px]"
                   alt="img"
-                />
+                /> 
                 <p className="text-[20px] md:text-[29px] font-semibold">500+</p>
                 <p className="w-[2.5rem] h-[3px] bg-white rounded-3xl"></p>
                 <p className="text-[12px] md:text-[24px]">Parents</p>
