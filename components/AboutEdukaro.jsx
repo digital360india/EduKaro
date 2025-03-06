@@ -205,7 +205,7 @@ const AboutEdukaro = () => {
                   src="/Frame.png"
                   width={1000}
                   height={1000}
-                  className={`absolute w-[450px] h-[485px] -bottom-[70px]  right-0 transition-transform duration-700 ease-in-out transform ${
+                  className={`absolute w-[450px] h-[485px] -bottom-[70px] bg-white right-0 transition-transform duration-700 ease-in-out transform ${
                     isHovered ? "translate-x-0" : "translate-x-full"
                   }`}
                   alt="Frame"
