@@ -82,7 +82,7 @@ const FormEduKaro = () => {
   return (
     <>
       <div className="relative w-full h-[539px]">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 md:block hidden">
           <Image
             src="/formbg.png"
             alt="School choice"
@@ -91,7 +91,6 @@ const FormEduKaro = () => {
             className="w-full h-full"
           />
         </div>
-
         <div className="absolute md:right-10 top-1/2 transform -translate-y-1/2 z-10 md:w-fit w-full p-6 bg-white bg-opacity-90 rounded-lg shadow-lg">
           <div className="md:hidden block font-bold text-center text-[20px]">
             Confuse to choose the Best School?
