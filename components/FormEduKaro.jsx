@@ -1,4 +1,5 @@
 "use client";
+import { base } from "@/app/api/airtable.js";
 import axios from "axios";
 import Image from "next/image";
 import { useState } from "react";
@@ -41,7 +42,7 @@ const FormEduKaro = () => {
       },
     ];
     try {
-      await base("counsellorForm").create(
+       base("counsellorForm").create(
         airtablePayload,
         function (err, records) {
           if (err) {
@@ -72,7 +73,7 @@ const FormEduKaro = () => {
           date: new Date().toISOString(),
         }
       );
-      if (response.status === 200 && lmsResponse.status === 200) {
+      if (emailResponse.status === 200 && lmsResponse.status === 200) {
         toast.success("Form Submitted Successfully!");
         setFormData({
           name: "",
