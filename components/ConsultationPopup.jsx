@@ -34,7 +34,7 @@ export default function ConsultationPopup({ setClose }) {
     setLoading(true);
 
     const airtablePayload = [
-      {   
+      {
         fields: {
           firstName: formData.name,
           email: formData.email,
@@ -65,7 +65,20 @@ export default function ConsultationPopup({ setClose }) {
         formData
       );
 
-      if (emailResponse.status === 200) {
+      // Submit to your LMS
+      const lmsResponse = await axios.post(
+        "https://digitalleadmanagement.vercel.app/api/add-lead",
+        {
+          name: formData.name,
+          phoneNumber: formData.phone,
+          url: window.location.href,
+          source: "Edukaro - Get Consultation Popup",
+          email: formData.email,
+          currentClass: formData.classes,
+          date: new Date().toISOString(),
+        }
+      );
+      if (emailResponse.status === 200 && lmsResponse.status === 200) {
         toast.success("Form Submitted Successfully!");
         setFormData({
           name: "",
@@ -108,7 +121,7 @@ export default function ConsultationPopup({ setClose }) {
         </div>
 
         <div className="w-full z-50 md:w-[470px] h-full rounded-lg md:rounded-l-2xl md:p-8  md:absolute md:top-0 md:right-14 bg-white">
-        <h3 className=" md:text-xl font-bold text-[#323232] pt-4 px-5 w-[85%]">
+          <h3 className=" md:text-xl font-bold text-[#323232] pt-4 px-5 w-[85%]">
             Fill this form and get in touch with our counsellor
           </h3>
           <form onSubmit={handleSubmit} className="space-y-7 md:space-y-6 p-5">
@@ -130,7 +143,7 @@ export default function ConsultationPopup({ setClose }) {
               onChange={handleChange}
               className="p-2 border-b-2 border-[#D9D9D9] w-full h-[39px] placeholder:text-[#898989] sm:border sm:rounded  sm:border-[#D9D9D9]"
             />
-           <div className="flex ">
+            <div className="flex ">
               <PhoneInput
                 className="w-full border-[#D9D9D9] border-b-2 rounded md:border md:rounded"
                 country={"in"}
