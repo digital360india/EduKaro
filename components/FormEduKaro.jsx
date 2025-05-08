@@ -42,7 +42,7 @@ const FormEduKaro = () => {
       },
     ];
     try {
-       base("counsellorForm").create(
+      await  base("counsellorForm").create(
         airtablePayload,
         function (err, records) {
           if (err) {

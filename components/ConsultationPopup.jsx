@@ -3,10 +3,11 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { RxCross1 } from "react-icons/rx";
 import axios from "axios";
-import { base } from "@/app/api/airtable";
+// import { base } from "@/app/api/airtable";
 import { toast } from "react-toastify";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import { base } from "@/app/api/airtable";
 
 export default function ConsultationPopup({ setClose }) {
   const [loading, setLoading] = useState(false);
