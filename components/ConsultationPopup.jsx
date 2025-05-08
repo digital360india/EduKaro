@@ -36,11 +36,11 @@ export default function ConsultationPopup({ setClose }) {
     const airtablePayload = [
       {
         fields: {
-          firstName: formData.name,
+          Name: formData.name,
           email: formData.email,
-          phoneNumber: formData.phone,
-          class: formData.classes,
-          URL: window.location.href,
+          Mobile: formData.phone,
+          grade: formData.classes,
+          Url: window.location.href,
         },
       },
     ];

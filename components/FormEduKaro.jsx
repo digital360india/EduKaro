@@ -34,9 +34,9 @@ const FormEduKaro = () => {
     const airtablePayload = [
       {
         fields: {
-          firstName: formData.name,
-          phoneNumber: formData.phone,
-          URL: window.location.href,
+          Name: formData.name,
+          Mobile: formData.phone,
+          Url: window.location.href,
         },
       },
     ];
