@@ -3,7 +3,7 @@ import React from "react";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import { FiFilter } from "react-icons/fi";
-import { base } from "@/app/api/airtable.jsx";
+// import { base } from "@/app/api/airtable.jsx";
 import { useState } from "react";
 import { useEffect } from "react";
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
@@ -11,6 +11,7 @@ import SchoolCardMini from "./SchoolCardMini";
 import Filter from "./Filter";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
+import { base } from "@/app/api/airtable.js";
 const SchoolCard = ({ categorydata }) => {
   const [citySlug, setCitySlug] = useState("");
   const [filterdata, setfilterdata] = useState({
