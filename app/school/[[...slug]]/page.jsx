@@ -406,22 +406,21 @@ export async function generateMetadata({ params }) {
       "max-image-preview": "standard",
     },
     openGraph: {
-      title: "Find the Best Boarding Schools in Seconds | Edu123",
-      description: "Find your dream boarding school in seconds with Edu123. Unlock a world of educational possibilities. Your path to the perfect education begins here.",
+      title: "Find the Best Boarding Schools in Seconds | Edukaro",
+      description: "Find your dream boarding school in seconds with Edukaro. Unlock a world of educational possibilities. Your path to the perfect education begins here.",
       url: "https://www.edukaro.com/",
       images: [
         `https://res.cloudinary.com/infoedu123/image/upload/v1703243169/EDU123/edu123HomeD.png`,
       ],
-      siteName: "Edu123",
+      siteName: "\Edukaro",
       locale: "en_US",
     },
     twitter: {
       card: "summary",
-      site: "@Edu123India",
-      title: "Find the Best Boarding Schools in Seconds | Edu123",
-      description: "Find your dream boarding school in seconds with Edu123. Unlock a world of educational possibilities. Your path to the perfect education begins here.",
+      site: "@EduKaro",
+      title: "Find the Best Boarding Schools in Seconds | Edukaro",
+      description: "Find your dream boarding school in seconds with Edukaro. Unlock a world of educational possibilities. Your path to the perfect education begins here.",
       image: "https://res.cloudinary.com/infoedu123/image/upload/v1703243169/EDU123/edu123HomeD.png",
-      url: "https://x.com/edu123india",
     },
     structuredData: [
       {
@@ -438,7 +437,7 @@ export async function generateMetadata({ params }) {
           {
             "@type": "ListItem",
             position: 1,
-            name: "Edu123",
+            name: "edukaro",
             item: "https://www.edukaro.com",
           },
           {

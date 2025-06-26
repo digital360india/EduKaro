@@ -33,8 +33,8 @@ export async function generateMetadata({ params }) {
       locale: "en_US",
       type: "website",
       images: [{ url: categorydata?.featuredImg }],
-      siteName: "Edu123",
-      siteName: "Edu123 School Search Portal",
+      siteName: "Edukaro",
+      siteName: "Edukaro School Search Portal",
     },
     robots: {
       googleBot: {
@@ -48,8 +48,8 @@ export async function generateMetadata({ params }) {
       description: categorydata?.meta_description,
       card: categorydata?.featuredImg,
       image: categorydata?.featuredImg,
-      site: "@edu123",
-      creator: "@edu123",
+      site: "@edukaro",
+      creator: "@edukaro",
     },
   };
 }
