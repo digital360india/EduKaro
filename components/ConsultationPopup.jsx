@@ -3,10 +3,11 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { RxCross1 } from "react-icons/rx";
 import axios from "axios";
-import { base } from "@/app/api/airtable";
+// import { base } from "@/app/api/airtable";
 import { toast } from "react-toastify";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import { base } from "@/app/api/airtable";
 
 export default function ConsultationPopup({ setClose }) {
   const [loading, setLoading] = useState(false);
@@ -34,7 +35,7 @@ export default function ConsultationPopup({ setClose }) {
     setLoading(true);
 
     const airtablePayload = [
-      {   
+      {
         fields: {
           Name: formData.name,
           email: formData.email,
@@ -65,7 +66,20 @@ export default function ConsultationPopup({ setClose }) {
         formData
       );
 
-      if (emailResponse.status === 200) {
+      // Submit to your LMS
+      const lmsResponse = await axios.post(
+        "https://digitalleadmanagement.vercel.app/api/add-lead",
+        {
+          name: formData.name,
+          phoneNumber: formData.phone,
+          url: window.location.href,
+          source: "Edukaro - Get Consultation Popup",
+          email: formData.email,
+          currentClass: formData.classes,
+          date: new Date().toISOString(),
+        }
+      );
+      if (emailResponse.status === 200 && lmsResponse.status === 200) {
         toast.success("Form Submitted Successfully!");
         setFormData({
           name: "",
@@ -90,7 +104,7 @@ export default function ConsultationPopup({ setClose }) {
       <div className="relative md:flex   gap-5  md:items-center bg-white rounded-lg shadow-lg w-full max-w-[90vw] md:max-w-[80vw] ">
         <button
           onClick={setClose}
-          className="absolute bg-background-dark px-1 py-1 md:px-2 z-50 rounded-full  md:py-2 top-2 right-2 text-2xl font-bold text-white hover:text-white"
+          className="absolute bg-background-dark p-1  md:px-2 z-50 rounded-full  md:py-2 top-3 right-2 text-xl font-bold text-white"
         >
           <div className="flex justify-center items-center">
             <RxCross1 />
@@ -107,11 +121,11 @@ export default function ConsultationPopup({ setClose }) {
           />
         </div>
 
-        <div className="w-full z-50 md:w-[470px] h-full rounded-l-2xl p-8 md:absolute md:top-0 md:right-14 bg-white">
-          <h3 className=" md:text-xl mb-6 text-[#323232]">
+        <div className="w-full z-50 md:w-[470px] h-full rounded-lg md:rounded-l-2xl md:p-8  md:absolute md:top-0 md:right-14 bg-white">
+          <h3 className=" md:text-xl font-bold text-[#323232] pt-4 px-5 w-[85%]">
             Fill this form and get in touch with our counsellor
           </h3>
-          <form onSubmit={handleSubmit} className="space-y-7 md:space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-7 md:space-y-6 p-5">
             <input
               required
               type="text"
@@ -130,7 +144,7 @@ export default function ConsultationPopup({ setClose }) {
               onChange={handleChange}
               className="p-2 border-b-2 border-[#D9D9D9] w-full h-[39px] placeholder:text-[#898989] sm:border sm:rounded  sm:border-[#D9D9D9]"
             />
-           <div className="flex ">
+            <div className="flex ">
               <PhoneInput
                 className="w-full border-[#D9D9D9] border-b-2 rounded md:border md:rounded"
                 country={"in"}

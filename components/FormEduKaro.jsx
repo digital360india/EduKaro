@@ -1,4 +1,5 @@
 "use client";
+import { base } from "@/app/api/airtable.js";
 import axios from "axios";
 import Image from "next/image";
 import { useState } from "react";
@@ -41,7 +42,7 @@ const FormEduKaro = () => {
       },
     ];
     try {
-      await base("counsellorForm").create(
+      await  base("counsellorForm").create(
         airtablePayload,
         function (err, records) {
           if (err) {
@@ -61,7 +62,18 @@ const FormEduKaro = () => {
         formData
       );
 
-      if (emailResponse.status === 200) {
+      // Submit to your LMS
+      const lmsResponse = await axios.post(
+        "https://digitalleadmanagement.vercel.app/api/add-lead",
+        {
+          name: formData.name,
+          phoneNumber: formData.phone,
+          url: window.location.href,
+          source: "Edukaro - Confuse to choose the Best School",
+          date: new Date().toISOString(),
+        }
+      );
+      if (emailResponse.status === 200 && lmsResponse.status === 200) {
         toast.success("Form Submitted Successfully!");
         setFormData({
           name: "",
@@ -82,7 +94,7 @@ const FormEduKaro = () => {
   return (
     <>
       <div className="relative w-full h-[539px]">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 md:block hidden">
           <Image
             src="/formbg.png"
             alt="School choice"
@@ -91,12 +103,11 @@ const FormEduKaro = () => {
             className="w-full h-full"
           />
         </div>
-
-        <div className="absolute right-10 top-1/2 transform -translate-y-1/2 z-10 md:w-fit w-full p-6 bg-white bg-opacity-90 rounded-lg shadow-lg">
-          <div className="md:hidden block w-[226px] text-[20px]">
+        <div className="absolute md:right-10 top-1/2 transform -translate-y-1/2 z-10 md:w-fit w-full p-6 bg-white bg-opacity-90 rounded-lg shadow-lg">
+          <div className="md:hidden block font-bold text-center text-[20px]">
             Confuse to choose the Best School?
           </div>
-          <h3 className="md:text-xl mt-8 text-[12px] mb-6 text-[#323232]">
+          <h3 className="md:text-xl text-[12px] my-6 text-[#323232]">
             Fill this form and get in touch with our counsellor
           </h3>
           <form onSubmit={handleSubmit} className="space-y-7">
@@ -107,7 +118,7 @@ const FormEduKaro = () => {
               placeholder="Your name"
               value={formData.name}
               onChange={handleChange}
-              className="p-2 border-b-2 border-[#D9D9D9] w-full h-[39px] placeholder:text-[#898989] sm:border sm:rounded lg:w-[498px] sm:border-[#D9D9D9]"
+              className="p-2 border border-[#D9D9D9] w-full h-[39px] placeholder:text-[#898989] sm:border sm:rounded lg:w-[498px] sm:border-[#D9D9D9]"
             />
             <div className="flex w-full lg:w-[498px]">
               <PhoneInput
@@ -129,7 +140,7 @@ const FormEduKaro = () => {
               <button
                 type="submit"
                 disabled={loading}
-                className={`md:w-[160px] md:h-[50px] md:px-0 px-8 md:py-0 py-3 bg-background-dark text-white p-2 rounded-lg ${
+                className={`md:w-[160px] md:h-[50px] md:px-0 px-8  bg-background-dark text-white p-2 rounded-lg ${
                   loading
                     ? "cursor-not-allowed opacity-70"
                     : "hover:bg-[#442B6F]"

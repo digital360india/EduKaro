@@ -1,9 +1,10 @@
-import { base } from "@/app/api/airtable.jsx";
+// import { base } from "@/app/api/airtable.jsx";
 import Hero from "@/components/Hero";
 import FAQ from "@/components/FAQ";
 import CategoryPage from "@/components/CategoryPage";
 import CategoryHeroEduKaro from "@/components/CategoryHeroEduKaro";
 import Head from "next/head";
+import { base } from "@/app/api/airtable.js";
 
 async function getCategoryData(slug) {
   const categorydata = await base("category 2")

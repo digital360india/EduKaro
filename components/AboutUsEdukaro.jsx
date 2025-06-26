@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import MascotAnimation from "./MascotAnimation";
 import Image from "next/image";
 
 const AboutUsEdukaro = () => {
