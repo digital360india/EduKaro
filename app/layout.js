@@ -14,28 +14,30 @@ import Popup from "@/components/Popup";
 export async function generateMetadata() {
   return {
     title: "Discover Find Top Boarding Schools in Moments | Edukaro",
-    description: "Easily find the best boarding schools for your needs. Explore top-rated options, compare facilities, and choose the perfect one in just seconds!",
+    description:
+      "Easily find the best boarding schools for your needs. Explore top-rated options, compare facilities, and choose the perfect one in just seconds!",
     icons: [{ rel: "icon", url: "/edukarologo1.png" }],
+
+    verification: {
+      google: "FxthpetvH-NizObYbJiNC9f-6m6BzucnXVa9WMpUSNk",
+    },
+
     other: [
       {
         name: "viewport",
         content: "width=device-width, initial-scale=1, shrink-to-fit=no",
       },
       {
-        name: "description",
-        content:
-          "Easily find the best boarding schools for your needs. Explore top-rated options, compare facilities, and choose the perfect one in just seconds!",
-      },
-      {
         name: "keywords",
         content:
-          "School Admissions, School consultancy, School consultancy, Online School Listings, Admissions Guidance, Boarding School Listings, Trusted School Consultancy, School Admission Information, Finding the Right Boarding School",
+          "School Admissions, School consultancy, Online School Listings, Boarding School Listings, Trusted School Consultancy",
       },
       {
         name: "application-name",
         content: "Edukaro",
       },
     ],
+
     openGraph: {
       locale: "en_US",
       type: "website",
@@ -52,8 +54,8 @@ export async function generateMetadata() {
       ],
     },
   };
-  
 }
+
 
 export default function RootLayout({ children }) {
   return (
